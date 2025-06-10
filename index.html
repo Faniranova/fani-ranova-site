@@ -2,91 +2,103 @@
 <html lang="bg">
 <head>
   <meta charset="UTF-8">
-  <title>Фани Ранова – Психолог</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Фани Ранова – психолог, специализирана в приложната психология. Частна практика и училищен психолог.">
+  <meta name="description" content="Фани Ранова – психолог, специализирал в приложната психология. Частна практика и училищен психолог.">
+  <title>Фани Ранова – Психолог</title>
   <style>
     body {
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f9f9f9;
+      background-color: #fdfdfd;
       color: #333;
     }
-    .header {
-      background-color: #fff;
-      padding: 40px;
+    header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #f0f0f0;
+      padding: 2em;
+    }
+    .left-header {
       text-align: center;
     }
-    .content {
-      max-width: 700px;
-      margin: 0 auto;
+    .left-header h1 {
+      margin-top: 0;
     }
-    .profile-img {
-      max-width: 200px;
-      border-radius: 50%;
-      margin-bottom: 20px;
-    }
-    h1 {
-      margin: 0;
-      font-size: 28px;
-      color: #2c3e50;
-    }
-    p {
-      margin: 10px 0;
-      font-size: 16px;
-    }
-    .button-container {
-      margin-top: 20px;
-    }
-    .btn {
+    .left-header .btn {
+      display: inline-block;
+      margin-top: 10px;
       padding: 10px 20px;
       background-color: #4CAF50;
       color: white;
-      border: none;
-      border-radius: 5px;
       text-decoration: none;
-      font-size: 16px;
-      cursor: pointer;
-      display: inline-block;
+      border-radius: 5px;
     }
-    .btn:hover {
+    .left-header .btn:hover {
       background-color: #45a049;
     }
-    .footer {
-      padding: 20px;
-      text-align: center;
-      font-size: 14px;
-      background-color: #eee;
+    header img {
+      margin-top: 20px;
+      width: 220px;
+      border-radius: 50%;
+      border: 4px solid #fff;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
-    .social-links a {
+    section {
+      max-width: 1000px;
+      margin: 2em auto;
+      padding: 0 1em;
+    }
+    .socials {
+      text-align: center;
+      margin-top: 2em;
+    }
+    .socials a {
       margin: 0 10px;
       text-decoration: none;
       color: #4CAF50;
+      font-weight: bold;
+    }
+    footer {
+      text-align: center;
+      padding: 2em 1em;
+      background-color: #f0f0f0;
+      font-size: 0.9em;
     }
   </style>
 </head>
 <body>
 
-  <div class="header">
-    <div class="content">
-      <img src="profile.jpg" alt="Фани Ранова" class="profile-img">
+  <header>
+    <div class="left-header">
       <h1>Фани Ранова – Психолог</h1>
-      <p>Работя като училищен психолог и специализирам в сферата на приложната психология. Дълги години съм работила с деца в детски градини, както и в една от водещите за България компании за специализирана медицина. Имам опит с менторството на деца, лишени от родителска грижа. В момента съм на разположение и за частна практика.</p>
-      <div class="button-container">
-        <a href="blog.html" class="btn">Блог</a>
-      </div>
+      <a href="blog.html" class="btn">Блог</a>
     </div>
-  </div>
+    <img src="profile.jpg" alt="Фани Ранова">
+  </header>
 
-  <div class="footer">
-    Свържете се с мен: <a href="mailto:fani.ranova@gmail.com">fani.ranova@gmail.com</a><br>
-    <div class="social-links">
+  <section>
+    <h2>За мен</h2>
+    <p>Казвам се <strong>Фани Ранова</strong> и съм психолог с професионален фокус върху <strong>приложната психология</strong>. Работата ми е насочена към <strong>подкрепа и развитие на деца, юноши и възрастни</strong> в различни житейски контексти – от образователната среда до личните вътрешни търсения.</p>
+    <p>През годините съм натрупала опит както в <strong>детски градини</strong>, така и в <strong>една от водещите компании за специализирана медицина в България</strong>. Вярвам, че срещата между науката, емпатията и практическото приложение е ключът към смислената психологическа подкрепа.</p>
+    <p>Имам ангажимент към <strong>работа с уязвими групи</strong>, включително <strong>деца лишени от родителска грижа</strong> и лица, преживели травматични събития. В тази сфера следвам принципите на <strong>доверие, конфиденциалност и професионална етика</strong>.</p>
+    <p>В момента съм <strong>училищен психолог</strong>, като паралелно с това развивам и <strong>частна практика</strong>, насочена към личностна подкрепа, консултиране и саморазвитие.</p>
+  </section>
+
+  <section class="socials">
+    <h2>Свържете се с мен</h2>
+    <p>Имейл: <a href="mailto:fani.ranova@gmail.com">fani.ranova@gmail.com</a></p>
+    <p>
       <a href="https://www.facebook.com/fani.ranova" target="_blank">Facebook</a> |
       <a href="https://www.instagram.com/fani_ranova/" target="_blank">Instagram</a> |
       <a href="https://www.tiktok.com/@faniranova725?lang=en" target="_blank">TikTok</a>
-    </div>
-  </div>
+    </p>
+  </section>
+
+  <footer>
+    © 2025 Фани Ранова. Всички права запазени.
+  </footer>
 
 </body>
 </html>
