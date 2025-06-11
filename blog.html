@@ -18,24 +18,30 @@
   </script>
 
   <style>
+    .blog-banner {
+      background-color: #f4dada;
+      text-align: center;
+      padding: 3em 1em;
+    }
+
+    .blog-banner h1 {
+      font-family: 'Georgia', serif;
+      font-size: 2.2em;
+      color: #4a4a4a;
+      margin-bottom: 0.5em;
+    }
+
+    .blog-banner p {
+      font-size: 1.1em;
+      color: #555;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
     .blog-wrapper {
       max-width: 700px;
       margin: 3em auto;
       padding: 0 1.5em;
-    }
-
-    .blog-wrapper h2 {
-      font-size: 2em;
-      text-align: center;
-      margin-bottom: 0.4em;
-      color: #b35e5e;
-    }
-
-    .blog-wrapper p.intro {
-      text-align: center;
-      font-size: 1.1em;
-      color: #555;
-      margin-bottom: 2em;
     }
 
     .post-preview {
@@ -72,40 +78,52 @@
     .post-preview a:hover {
       text-decoration: underline;
     }
+
+    .simple-nav {
+      text-align: center;
+      margin-top: 1em;
+    }
+
+    .simple-nav a {
+      background-color: #f4dada;
+      color: #333;
+      padding: 10px 20px;
+      border-radius: 30px;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: 500;
+      transition: background-color 0.3s ease;
+    }
+
+    .simple-nav a:hover {
+      background-color: #f0c2c2;
+    }
   </style>
 </head>
 
 <body>
-  <div class="banner">
-    <div class="banner-text">Блог за психология и себепознание</div>
+  <div class="blog-banner">
+    <h1>Блог</h1>
+    <p>Статии за психология, личностно израстване, вътрешна работа и малките открития по пътя към себе си.</p>
   </div>
 
-  <header>
-    <img src="profile.jpg" alt="Фани Ранова">
-    <h1 class="name-title">Фани Ранова – Психолог</h1>
-
-    <div class="button-row">
-      <a href="index.html" class="button">Начало</a>
-      <a href="mailto:fani.ranova@gmail.com" class="button">Запиши се за консултация</a>
-      <a href="contact.html" class="button">Контакти</a>
-    </div>
-  </header>
+  <div class="simple-nav">
+    <a href="index.html">Начало</a>
+    <a href="contact.html">Контакти</a>
+  </div>
 
   <main class="blog-wrapper">
-    <h2>Блог</h2>
-    <p class="intro">Тук споделям мисли, опит и гледни точки, които могат да подкрепят личния път към осъзнаване, регулация и връзка със себе си.</p>
-
     <!-- Примерен пост -->
     <div class="post-preview">
       <h3><a href="articles/placebo.html">Плацебо ефектът: силата на вярата в психологията</a></h3>
       <p>Как психиката влияе върху възстановяването и защо не бива да подценяваме ефекта на очакването...</p>
     </div>
 
-    <!-- Тук ще добавиш нови постове -->
+    <!-- Място за нови статии -->
     <!--
     <div class="post-preview">
-      <h3><a href="articles/ime-na-statiyata.html">Заглавие на втора статия</a></h3>
-      <p>Кратко описание или първи ред от статията...</p>
+      <h3><a href="articles/druga-statia.html">Заглавие на друга статия</a></h3>
+      <p>Кратко описание...</p>
     </div>
     -->
   </main>
