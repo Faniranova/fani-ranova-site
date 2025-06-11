@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="bg">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Контакти – Фани Ранова, психолог с частна практика и училищен опит.">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Контакти – Фани Ранова, психолог с частна практика и училищен опит." />
   <title>Контакти – Фани Ранова</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="favicon.png" />
 
-  <!-- Google tag (gtag.js) -->
+  <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-67QGGMR4RL"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -16,57 +16,6 @@
     gtag('js', new Date());
     gtag('config', 'G-67QGGMR4RL');
   </script>
-  <style>
-    .contact-wrapper {
-      max-width: 600px;
-      margin: 3em auto;
-      text-align: center;
-      padding: 0 1em;
-    }
-
-    .contact-wrapper h2 {
-      font-size: 1.8em;
-      margin-bottom: 0.5em;
-    }
-
-    .contact-wrapper p {
-      font-size: 1.1em;
-      margin-bottom: 1.2em;
-    }
-
-    .contact-email a {
-      font-size: 1.2em;
-      color: #b35e5e;
-      font-weight: 600;
-      text-decoration: none;
-    }
-
-    .contact-email a:hover {
-      text-decoration: underline;
-    }
-
-    .social-links {
-      display: flex;
-      justify-content: center;
-      gap: 24px;
-      margin-top: 2em;
-      flex-wrap: wrap;
-    }
-
-    .social-links a {
-      font-weight: 500;
-      color: #3c3c3c;
-      background-color: #f4dada;
-      padding: 10px 18px;
-      border-radius: 30px;
-      text-decoration: none;
-      transition: background-color 0.3s ease;
-    }
-
-    .social-links a:hover {
-      background-color: #f0c2c2;
-    }
-  </style>
 </head>
 
 <body>
@@ -75,7 +24,7 @@
   </div>
 
   <header>
-    <img src="profile.jpg" alt="Фани Ранова">
+    <img src="profile.jpg" alt="Фани Ранова" />
     <h1 class="name-title">Фани Ранова – Психолог</h1>
 
     <div class="button-row">
@@ -85,19 +34,22 @@
     </div>
   </header>
 
-  <section class="contact-wrapper">
-    <h2>Как да се свържеш с мен</h2>
-    <p>Ако имаш въпрос, нужда от консултация или искаш да работим заедно – можеш да ми пишеш директно.</p>
+  <section>
+    <h2>Свържете се с мен</h2>
+    <p>Може да ми пишете директно чрез формата по-долу. Отговарям на имейли до 48 часа.</p>
 
-    <div class="contact-email">
-      <a href="mailto:fani.ranova@gmail.com">fani.ranova@gmail.com</a>
-    </div>
+    <form class="contact-form" action="https://formspree.io/f/mzzgrzey" method="POST">
+      <label for="name">Име:</label>
+      <input type="text" id="name" name="name" required />
 
-    <div class="social-links">
-      <a href="https://www.facebook.com/fani.ranova" target="_blank">Facebook</a>
-      <a href="https://www.instagram.com/fani_ranova/" target="_blank">Instagram</a>
-      <a href="https://www.tiktok.com/@faniranova725?lang=en" target="_blank">TikTok</a>
-    </div>
+      <label for="email">Имейл:</label>
+      <input type="email" id="email" name="_replyto" required />
+
+      <label for="message">Съобщение:</label>
+      <textarea id="message" name="message" rows="6" required></textarea>
+
+      <button type="submit" class="button">Изпрати</button>
+    </form>
   </section>
 
   <footer>
