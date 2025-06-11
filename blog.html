@@ -1,22 +1,117 @@
-<div class="post-preview">
-  <a href="articles/placebo.html">Какво е плацебо ефект?</a>
-  <p class="desc">Как умът влияе върху тялото – реалният ефект на празното хапче.</p>
-</div>
 <!DOCTYPE html>
 <html lang="bg">
 <head>
   <meta charset="UTF-8">
-  <title>Какво е плацебо ефект?</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-  <link rel="stylesheet" href="blog-style.css">
-</head>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-67QGGMR4RL"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Блог на Фани Ранова – статии за психология, вътрешна работа и себепознание.">
+  <title>Блог – Фани Ранова</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="favicon.png">
 
-  gtag('config', 'G-67QGGMR4RL');
-</script>
+  <!-- Google tag -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-67QGGMR4RL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-67QGGMR4RL');
+  </script>
+
+  <style>
+    .blog-wrapper {
+      max-width: 700px;
+      margin: 3em auto;
+      padding: 0 1.5em;
+    }
+
+    .blog-wrapper h2 {
+      font-size: 2em;
+      text-align: center;
+      margin-bottom: 0.4em;
+      color: #b35e5e;
+    }
+
+    .blog-wrapper p.intro {
+      text-align: center;
+      font-size: 1.1em;
+      color: #555;
+      margin-bottom: 2em;
+    }
+
+    .post-preview {
+      background-color: #fff;
+      border-radius: 12px;
+      padding: 1.5em;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      margin-bottom: 1.5em;
+      transition: transform 0.2s ease;
+    }
+
+    .post-preview:hover {
+      transform: translateY(-3px);
+    }
+
+    .post-preview h3 {
+      margin-top: 0;
+      font-size: 1.4em;
+      color: #b35e5e;
+    }
+
+    .post-preview p {
+      margin: 0.5em 0 0;
+      color: #666;
+      font-size: 1em;
+    }
+
+    .post-preview a {
+      text-decoration: none;
+      color: #b35e5e;
+      font-weight: 600;
+    }
+
+    .post-preview a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
 <body>
+  <div class="banner">
+    <div class="banner-text">Блог за психология и себепознание</div>
+  </div>
+
+  <header>
+    <img src="profile.jpg" alt="Фани Ранова">
+    <h1 class="name-title">Фани Ранова – Психолог</h1>
+
+    <div class="button-row">
+      <a href="index.html" class="button">Начало</a>
+      <a href="mailto:fani.ranova@gmail.com" class="button">Запиши се за консултация</a>
+      <a href="contact.html" class="button">Контакти</a>
+    </div>
+  </header>
+
+  <main class="blog-wrapper">
+    <h2>Блог</h2>
+    <p class="intro">Тук споделям мисли, опит и гледни точки, които могат да подкрепят личния път към осъзнаване, регулация и връзка със себе си.</p>
+
+    <!-- Примерен пост -->
+    <div class="post-preview">
+      <h3><a href="articles/placebo.html">Плацебо ефектът: силата на вярата в психологията</a></h3>
+      <p>Как психиката влияе върху възстановяването и защо не бива да подценяваме ефекта на очакването...</p>
+    </div>
+
+    <!-- Тук ще добавиш нови постове -->
+    <!--
+    <div class="post-preview">
+      <h3><a href="articles/ime-na-statiyata.html">Заглавие на втора статия</a></h3>
+      <p>Кратко описание или първи ред от статията...</p>
+    </div>
+    -->
+  </main>
+
+  <footer>
+    © 2025 Фани Ранова. Всички права запазени.
+  </footer>
+</body>
+</html>
