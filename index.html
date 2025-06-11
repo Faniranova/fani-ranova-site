@@ -30,8 +30,8 @@
     <!-- Нови бутони -->
     <div class="button-row">
       <a href="blog.html" class="button">Блог</a>
-      <a href="#contact" class="button">Запиши се за консултация</a>
-      <a href="#contact" class="button">Контакти</a>
+      <a href="mailto:fani.ranova@gmail.com" class="button">Запиши се за консултация</a>
+      <a href="contact.html" class="button">Контакти</a>
     </div>
   </header>
 
@@ -43,30 +43,8 @@
     <p>В момента съм <strong>училищен психолог</strong>, като паралелно с това развивам и <strong>частна практика</strong>, насочена към личностна подкрепа, консултиране и саморазвитие.</p>
   </section>
 
-<section class="socials" id="contact" style="display: none;">
-  <h2>Свържете се с мен</h2>
-  <p>Имейл: <a href="mailto:fani.ranova@gmail.com">fani.ranova@gmail.com</a></p>
-  <p>
-    <a href="https://www.facebook.com/fani.ranova" target="_blank">Facebook</a> |
-    <a href="https://www.instagram.com/fani_ranova/" target="_blank">Instagram</a> |
-    <a href="https://www.tiktok.com/@faniranova725?lang=en" target="_blank">TikTok</a>
-  </p>
-</section>
-
   <footer>
     © 2025 Фани Ранова. Всички права запазени.
   </footer>
-  <script>
-  document.querySelector('a[href="#contact"]').addEventListener('click', function(e) {
-    e.preventDefault();
-    const contactSection = document.getElementById('contact');
-    if (contactSection.style.display === 'none') {
-      contactSection.style.display = 'block';
-      contactSection.scrollIntoView({ behavior: 'smooth' });
-    } else {
-      contactSection.style.display = 'none';
-    }
-  });
-</script>
 </body>
 </html>
